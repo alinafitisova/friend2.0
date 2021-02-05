@@ -1,0 +1,55 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+        }
+}
+
+@import "normalize", 
+        "fonts", 
+        "vars_mixins", 
+        "header",
+        "header-slider",
+        "donat",
+        "lost",
+        "adopt",
+        "num",
+        "about",
+        "footer",
+        "pageAboutUs",
+        "pageHelp",
+        "pageVet",
+        "pageContacts";
+
+html,
+body {
+    font-family: $mainFont;
+    color: $primaryCol;
+    scroll-behavior: smooth;
+    &.lock {
+    @media (max-width: 767px)  {
+        overflow: hidden;
+        }
+    } 
+}
+body {
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1180px;
+    margin: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    @media (max-width: 1024px) {
+        padding: 0 30px;
+    }
+    @media (max-width: 768px) {
+        padding: 0 20px;
+    }
+    @media (max-width: 425px) {
+        padding: 0 10px;
+    }
+}
