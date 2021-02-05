@@ -1,0 +1,188 @@
+  // -------------DONAT MODAL--------------//
+.donate-dog,
+.donate-help {
+    display: block;
+    cursor: pointer;
+    z-index: 8;
+    transition: all .5s;
+    &:hover {
+        opacity: 1;
+    }
+}
+.donate-dog {
+    width: 120px;
+    height: 125px;
+    left: 4px;
+    bottom: 4px;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    animation: dog 1.5s 0.4s both;
+    -webkit-animation-name: dog 1.5s 0.4s both;
+        @media screen and (max-width: 500px) {
+            width: 95px;
+            height: 100px;
+        }
+        @media screen and (max-width: 375px) {
+            width: 95px;
+            height: 100px;
+        }
+}
+.donate-help {
+    position: absolute;
+    top: -3px;
+    right: 5px;
+    width: 66px;
+    animation: help-billboard 15.5s 2.2s infinite both;
+    -webkit-animation: help-billboard 15.5s 2s infinite both;
+    @media screen and (max-width: 500px) {
+        width: 55px;
+    }
+    @media screen and (max-width: 375px) {
+        width: 55px;
+    }
+}
+
+@-webkit-keyframes dog {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+        }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px, 0, 0);
+        transform: translate3d(25px, 0, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0);
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@-webkit-keyframes help-billboard {
+    0%{
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        
+    }
+    30%{
+        -webkit-transform: rotate(12deg) translateX(7px);
+        transform: rotate(12deg) translateX(7px);
+    }
+    60%{
+        -webkit-transform: rotate(-10deg) translateX(-6px);
+        transform: rotate(-10deg) translateX(-6px);
+    }
+    75%{
+        -webkit-transform: rotate(12deg) translateX(7px);
+        transform: rotate(12deg) translateX(7px);
+    }
+    100%{
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+}
+.donatModal {
+    &__title {
+        line-height: 25px;
+        @media screen and (max-width: 768px) {
+            font-size: 16px;
+        }
+        @media screen and (max-width: 425px) {
+            font-size: 15px;
+        }
+    }
+    &__subtitle {
+        margin-bottom: 40px;
+        @media screen and (max-width: 768px) {
+            font-size: 13px;
+        }
+        @media screen and (max-width: 425px) {
+            font-size: 12px;
+        }
+    }
+    &__payment {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 30px;
+    }
+    &__btn {
+        @media screen and (max-width: 768px) {
+            font-size: 15px;
+        }
+        @media screen and (max-width: 375px) {
+            font-size: 13px;
+        }
+    }   
+    &__link img {
+        max-width: 80%;
+        transition: all .3s ease-in-out; 
+        border-radius: 5%;
+            &:hover { 
+                transform: scale(1.1); 
+                box-shadow: 0 1px 10px 0 rgb(0 ,0 ,0 / 20%);
+            }
+            
+    }
+}
+#donatModal {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%; 
+    padding: 30px 20px;
+    border-radius: 4px;
+    background: #fafafa url("../img/bgPlentyPaw.png") 20px 18px; 
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 38;
+    text-align: center;box-sizing: border-box;
+    @media screen and (max-width: 1124px) {
+        max-width: 60%; 
+    }
+    @media screen and (max-width: 768px) {
+        max-width: 65%; 
+    }
+    @media screen and (max-width: 768px) {
+        max-width: 80%;
+    }
+    @media screen and (max-width: 425px) {
+        padding: 20px 20px;
+        max-width: 90%; 
+    }
+}
+#donatModal #donatModal__close {
+    width: 21px; height: 21px;
+    position: absolute;
+    font-size: 29px;
+    top: 10px;
+    right: 16px;
+    cursor: pointer;
+    display: block;
+}
+#Overlay {
+    z-index: 37;
+    position: fixed;
+    background: rgba(0,0,0,.7);
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    cursor: pointer;
+    display: none;
+}

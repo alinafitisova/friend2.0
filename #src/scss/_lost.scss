@@ -1,0 +1,147 @@
+.lost {
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    margin-top: -35px;
+    padding-top: 35px;
+    z-index: 7;
+    .container {
+        padding: 0 10px;
+    }
+}
+.lost-slider {
+    z-index: 1;
+    &__item {
+        z-index: 7;
+    }
+    &__inner {
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+        @media screen and (max-width: 650px) {
+            flex-direction: column;
+            height: 620px;
+        }
+    }
+    &__pic {
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;  
+        position: relative;
+        @media screen and (max-width: 650px) {
+            background-position: center center;
+        }
+    }
+    &__pic ,
+    &__description{
+        width: 50%;
+        height: 100%;
+        z-index: 7;
+        @media screen and (max-width: 650px) {
+            width: 100%;
+            height: 49%;
+        }
+    }
+    &__description {
+        background: $cardCol;
+        padding: 15px 35px;
+        box-sizing: border-box;
+    }
+    &__heading {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;   
+    }
+    &__title {
+        @include title(left);
+    }
+    &__text {
+        line-height: 25px;
+        @media screen and (max-width: 960px) {
+            font-size: 14px;
+            line-height: 19px;
+        }
+        @media screen and (max-width: 768px){
+            max-height: 40%;
+            overflow: scroll;
+        }
+    }
+    &__btn {
+        @media screen and (max-width: 768px){
+            font-size: 14px;
+        }
+    }
+
+}
+.btn {
+    @include btn($secondaryCol, #fff, 20px , 20px ,$primaryCol);
+}
+.slick-arrow{
+    position: absolute;
+    bottom: 4px;
+    z-index: 10;
+    font-size: 0;
+    width: 50px;
+    height: 100px;
+    background-color: #fff;
+    transition: all .15s;
+    outline: none;
+    cursor: pointer;
+        @media screen and (max-width: 650px)  {
+            width: 65px;
+            height: 65px;
+            top: 242px;
+            box-shadow: 0px 10px 4px -5px rgba(34, 60, 80, 0.31);
+        }
+        &:hover{
+            transition: all .5s;
+            background: #ffde00 url("../img/bgPaw.png") 20px 18px; 
+        }
+        &:after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 40px;
+        transform: rotate(45deg);
+        }    
+}
+.slick-prev,
+.slick-next {
+    border: none;
+    &::after{
+        top: 44px;
+        @media screen and (max-width: 650px) {
+            top: 28px;
+        }
+    }
+}
+.slick-prev {
+    left: 0px;
+    &::after{
+        border-left: 2px solid $primaryCol;
+        border-bottom: 2px solid $primaryCol;
+        right: 10px;  
+        @media screen and (max-width: 650px) {
+            right: 23px;
+        }
+    }
+    
+}
+.slick-next {
+    left: 50px;
+    &::after{
+        border-right: 2px solid $primaryCol;
+        border-top: 2px solid $primaryCol;
+        right: 26px;
+    }
+    @media screen and (max-width: 650px) {
+        left: 65px;
+    }
+}
