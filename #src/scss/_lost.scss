@@ -9,6 +9,9 @@
     .container {
         padding: 0 10px;
     }
+    @media screen and (max-width: 425px) {
+        padding-top: 80px;
+    }
 }
 .lost-slider {
     z-index: 1;

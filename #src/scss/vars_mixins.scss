@@ -3,10 +3,10 @@ $primaryBGcol: #00A35C;
 $secondaryBGcol: #FFDF00;
 $menuCol: #fff;
 $cardBGcol: #fff;
-$mainFont: "Roboto-Regular";
+$mainFont: 'Roboto', sans-serif;
 
 @mixin btn($bg, $col, $paddTopBut, $paddLeftRight, $hoverCol) {
-    font-family: "Roboto-Bold";
+    font-family: $mainFont;
     font-weight: 700;
     font-size: 18px;
     background: $bg;

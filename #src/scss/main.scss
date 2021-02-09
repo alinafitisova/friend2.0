@@ -1,15 +1,18 @@
-@mixin font($font_name, $file_name, $weight, $style) {
-    @font-face {
-        font-family: $font_name;
-        font-display: swap;
-        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
-        font-weight: #{$weight};
-        font-style: #{$style};
-        }
-}
+//automation of writing external connection fonts
 
-@import "normalize", 
-        "fonts", 
+// @mixin font($font_name, $file_name, $weight, $style) {
+//     @font-face {
+//         font-family: $font_name;
+//         font-display: swap;
+//         src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+//         font-weight: #{$weight};
+//         font-style: #{$style};
+//         }
+// }
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300,400,500,700&display=swap');
+
+
+@import "normalize",  
         "vars_mixins", 
         "header",
         "header-slider",
@@ -24,6 +27,7 @@
         "help",
         "vet",
         "contacts";
+
 
 html,
 body {

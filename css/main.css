@@ -384,38 +384,6 @@ template {
   display: none;
 }
 
-@font-face {
-  font-family: "Roboto-Bold";
-  font-display: swap;
-  src: url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto-Light";
-  font-display: swap;
-  src: url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto-Regular";
-  font-display: swap;
-  src: url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto-Medium";
-  font-display: swap;
-  src: url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
 .header {
   width: 100%;
   top: 0;
@@ -496,7 +464,8 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   color: #fff;
   text-transform: uppercase;
   font-size: 18px;
@@ -750,8 +719,8 @@ template {
   right: 20%;
   -moz-text-align-last: left;
        text-align-last: left;
-  -webkit-box-shadow: 0px 0px 15px 8px rgba(34, 60, 80, 0.07);
-  box-shadow: 0px 0px 15px 8px rgba(34, 60, 80, 0.07);
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
   padding: 0.2em  0.8em;
 }
 
@@ -824,7 +793,7 @@ template {
   font-size: 35px;
   line-height: 45px;
   text-align: left;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   margin: 0;
@@ -1101,7 +1070,7 @@ template {
   font-size: 35px;
   line-height: 45px;
   text-align: left;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
 }
@@ -1111,7 +1080,7 @@ template {
 }
 
 .btn {
-  font-family: "Roboto-Bold";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
   background: #00A35C;
@@ -1231,7 +1200,7 @@ template {
   font-size: 35px;
   line-height: 45px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
 }
@@ -1352,7 +1321,7 @@ template {
 }
 
 .adopt__btn {
-  font-family: "Roboto-Bold";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 15px;
   background: transparent;
@@ -1394,7 +1363,7 @@ template {
 }
 
 .adopt .btn {
-  font-family: "Roboto-Bold";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
   background: #00A35C;
@@ -1459,7 +1428,7 @@ template {
   font-size: 35px;
   line-height: 45px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   margin-top: 95px;
@@ -1568,7 +1537,7 @@ template {
 .back__subtitle {
   font-size: 20px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #232323;
   margin: 0;
@@ -1582,7 +1551,7 @@ template {
   font-size: 18px;
   line-height: 37px;
   text-align: left;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   max-height: 320px;
@@ -1614,7 +1583,7 @@ template {
 }
 
 .descr {
-  font-family: Roboto-Bold;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 23px;
   padding: 0;
@@ -1697,7 +1666,7 @@ template {
   font-size: 35px;
   line-height: 45px;
   text-align: left;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   margin: 0px  0px;
@@ -1710,7 +1679,7 @@ template {
 }
 
 .about__btn {
-  font-family: "Roboto-Bold";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 15px;
   background: transparent;
@@ -1744,7 +1713,7 @@ template {
 }
 
 .about .btn {
-  font-family: "Roboto-Bold";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
   background: #00A35C;
@@ -1861,7 +1830,7 @@ template {
 }
 
 .footer-menu__category {
-  font-family: Roboto-Medium;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
@@ -1981,7 +1950,7 @@ template {
   font-size: 40px;
   line-height: 60px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
 }
@@ -2013,7 +1982,7 @@ template {
   font-size: 18px;
   line-height: 37px;
   text-align: left;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   width: 50%;
@@ -2060,7 +2029,7 @@ template {
   font-size: 18px;
   line-height: 37px;
   text-align: left;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
 }
@@ -2069,7 +2038,7 @@ template {
   font-size: 35px;
   line-height: 45px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   line-height: 35px;
@@ -2144,7 +2113,7 @@ template {
   font-size: 40px;
   line-height: 60px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
 }
@@ -2153,7 +2122,7 @@ template {
   font-size: 18px;
   line-height: 37px;
   text-align: left;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
 }
@@ -2218,7 +2187,7 @@ template {
   font-size: 35px;
   line-height: 45px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   line-height: 35px;
@@ -2232,7 +2201,7 @@ template {
   font-size: 18px;
   line-height: 37px;
   text-align: left;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
 }
@@ -2241,7 +2210,7 @@ template {
   font-size: 35px;
   line-height: 45px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   line-height: 35px;
@@ -2251,7 +2220,7 @@ template {
   font-size: 18px;
   line-height: 37px;
   text-align: left;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
 }
@@ -2264,7 +2233,7 @@ template {
   font-size: 35px;
   line-height: 45px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   line-height: 35px;
@@ -2274,7 +2243,7 @@ template {
   font-size: 18px;
   line-height: 37px;
   text-align: left;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
 }
@@ -2314,7 +2283,7 @@ template {
   font-size: 40px;
   line-height: 60px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
 }
@@ -2323,7 +2292,7 @@ template {
   font-size: 18px;
   line-height: 37px;
   text-align: left;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
 }
@@ -2386,7 +2355,7 @@ template {
   font-size: 35px;
   line-height: 45px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   line-height: 35px;
@@ -2395,7 +2364,7 @@ template {
 .finance-help__subtitle {
   font-size: 20px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #232323;
 }
@@ -2564,7 +2533,7 @@ tbody tr:nth-child(even) {
   font-size: 18px;
   line-height: 37px;
   text-align: left;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   margin-bottom: 20px;
@@ -2601,7 +2570,7 @@ tbody tr:nth-child(even) {
   font-size: 35px;
   line-height: 45px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   line-height: 35px;
@@ -2610,7 +2579,7 @@ tbody tr:nth-child(even) {
 .how-toHelp__subtitle {
   font-size: 20px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #232323;
 }
@@ -2623,7 +2592,7 @@ tbody tr:nth-child(even) {
   font-size: 35px;
   line-height: 45px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   line-height: 35px;
@@ -2632,7 +2601,7 @@ tbody tr:nth-child(even) {
 .curator__subtitle {
   font-size: 20px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #232323;
 }
@@ -2663,7 +2632,7 @@ tbody tr:nth-child(even) {
   font-size: 18px;
   line-height: 37px;
   text-align: left;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   width: 50%;
@@ -2677,7 +2646,7 @@ tbody tr:nth-child(even) {
   font-size: 35px;
   line-height: 45px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   line-height: 35px;
@@ -2686,7 +2655,7 @@ tbody tr:nth-child(even) {
 .cruel__subtitle {
   font-size: 20px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #232323;
   color: rgba(226, 45, 45, 0.877);
@@ -2696,7 +2665,7 @@ tbody tr:nth-child(even) {
   font-size: 18px;
   line-height: 37px;
   text-align: left;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
 }
@@ -2753,7 +2722,7 @@ tbody tr:nth-child(even) {
   font-size: 18px;
   line-height: 37px;
   text-align: left;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
 }
@@ -2787,7 +2756,7 @@ tbody tr:nth-child(even) {
   font-size: 35px;
   line-height: 45px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
 }
@@ -2813,7 +2782,7 @@ tbody tr:nth-child(even) {
   font-size: 35px;
   line-height: 45px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
 }
@@ -2864,7 +2833,7 @@ tbody tr:nth-child(even) {
 .memor__subtitle {
   font-size: 20px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #232323;
 }
@@ -2935,7 +2904,7 @@ tbody tr:nth-child(even) {
   font-size: 40px;
   line-height: 60px;
   text-align: center;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   margin: 0;
@@ -2954,7 +2923,7 @@ tbody tr:nth-child(even) {
   font-size: 35px;
   line-height: 45px;
   text-align: left;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   font-size: 22px;
@@ -2966,7 +2935,7 @@ tbody tr:nth-child(even) {
   font-size: 18px;
   line-height: 37px;
   text-align: left;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   color: #fff;
@@ -2987,7 +2956,7 @@ tbody tr:nth-child(even) {
   font-size: 18px;
   line-height: 37px;
   text-align: left;
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #232323;
   color: #fff;
@@ -3013,7 +2982,7 @@ tbody tr:nth-child(even) {
 
 html,
 body {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto", sans-serif;
   color: #232323;
   scroll-behavior: smooth;
 }
@@ -4275,6 +4244,10 @@ body {
   #donatModal {
     padding: 20px 20px;
     max-width: 90%;
+  }
+
+  .lost {
+    padding-top: 80px;
   }
 
   .lost-slider__title {
