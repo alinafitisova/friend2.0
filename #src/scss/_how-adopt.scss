@@ -1,0 +1,154 @@
+.adopting-wrapper {
+    margin-top: 150px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 425px) {
+        margin-top: 130px;
+    }
+}
+.adopting {
+    width: 100%;
+    height: 100%;
+        &__heading {
+            @include heading (center);
+            margin-bottom: 50px;
+            @media screen and (max-width: 425px) {
+                margin-bottom: 20px;
+            }
+        }
+        &__box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+            & img {
+                width: 100%;
+            }
+            & picture {
+                width: 50%;
+                margin-right: 15px;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+        }
+        &__text,
+        &__right {
+            @include description(left); 
+            width: 50%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        } 
+        &__blockquote {
+            position: relative;
+            padding: 16px 24px;
+            margin: 50px auto;   
+            font-size: 16px;
+            line-height: 40px;
+            text-align: center;
+            max-width: 55%;
+            @media screen and (max-width: 425px) {
+                font-size: 15px;
+                line-height: 25px;
+                padding: 10px 0px;
+                margin: 10px auto;
+            }
+        }
+        &__blockquote:before,
+        &__blockquote:after {
+            position: absolute;
+            color: $primaryBGcol;
+            font-size: 100px;
+            font-family: Times, sans-serif;    
+            line-height: 100px;   
+                @media screen and (max-width: 375px) {
+                    font-size: 50px;
+                }
+            }
+        &__blockquote:before {
+            content: '“';
+            left: -30px;
+            top: -10px;
+            }
+        &__blockquote:after {
+            content: '”';
+            right: -30px;
+            bottom: -10px;
+            }
+        &__blockquote cite {
+            color: $primaryBGcol;
+            font-size: 15px;
+            padding-top: 10px;
+            display: block;
+                @media screen and (max-width: 375px) {
+                    font-size: 13px;
+                    line-height: 15px;
+                }
+        }
+        &__description {
+            @include description(left); 
+        }
+        &__title {
+            @include title (center);
+            line-height: 50px;
+            margin: 90px auto 60px;
+            max-width: 55%;
+            @media screen and (max-width: 425px) {
+                max-width: 90%;
+                margin: 50px auto 20px;
+            }
+        }
+        & a {
+            text-decoration: none;
+            font-weight: 600;
+            color: inherit;
+            transition: all .3s;
+                &:hover {
+                    text-decoration: underline;
+                    color: $primaryBGcol;
+                }
+        }
+        &__aware {
+            font-weight: 600;
+        }
+        &__questions {
+            list-style: none;
+            padding-left: 10px;
+            font-size: 15px;
+            line-height: 29px;
+            @media screen and (max-width: 1024px) {
+                font-size: 14px;
+            }
+            @media screen and (max-width: 880px) {
+                font-size: 13px;
+                line-height: 20px;
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 10px;
+            }
+                }
+        &__catalog  {
+            list-style: none;
+            padding-left: 10px;
+            & li {
+                margin-bottom: 7px;
+                &::before {
+                    content: "\1F43E";  
+                    color: $secondaryBGcol; 
+                    font-weight: bold; 
+                    font-size: 25px;
+                    display: inline-block;
+                    width: 35px;
+                }
+            }
+        }    
+}
+    
