@@ -1,0 +1,107 @@
+$primaryCol: #232323;
+$primaryBGcol: #00A35C;
+$secondaryBGcol: #FFDF00;
+$menuCol: #fff;
+$cardBGcol: #fff;
+$mainFont: 'Roboto', sans-serif;
+
+@mixin btn($bg, $col, $paddTopBut, $paddLeftRight, $hoverCol) {
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 18px;
+    background: $bg;
+    padding: $paddTopBut $paddLeftRight;
+    text-decoration: none;
+    color: $col;
+    display: inline-block;
+    text-align: center;
+    transition: all .3s;
+    position: relative;
+    top: 0;
+    box-shadow: 0px 5px 0px #247e4b;
+    &:hover {
+        color: $hoverCol;
+        top: 2px;
+        box-shadow: 0px 4px 0px #a7a40b;
+        background: $secondaryBGcol url("../img/bgPaw.png")  86% -1% no-repeat; 
+        }
+}
+@mixin heading ($textAl) {
+    font-size: 40px;
+    line-height: 60px;
+    text-align: $textAl;
+    font-family: $mainFont;
+    font-weight: 400;
+    color: $primaryCol;
+    @media screen and (max-width: 1024px) {
+        font-size: 35px;
+    }
+    @media screen and (max-width: 880px) {
+        font-size: 30px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 27px;
+    }
+    @media screen and (max-width: 425px) {
+        margin-top: 0;
+        font-size: 26px;
+    }
+}
+@mixin title ($textAl) {
+    font-size: 35px;
+    line-height: 45px;
+    text-align: $textAl;
+    font-family: $mainFont;
+    font-weight: 400;
+    color: $primaryCol;
+    @media screen and (max-width: 1024px) {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    @media screen and (max-width: 880px) {
+        font-size: 27px;
+        line-height: 37px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    @media screen and (max-width: 425px) {
+        margin-top: 20px;
+    }
+    
+}
+@mixin subtitle ($textAl) {
+    font-size: 20px;
+    text-align: $textAl;
+    font-family: $mainFont;
+    font-weight: 700;
+    color: $primaryCol;
+    @media screen and (max-width: 1024px) {
+        font-size: 18px;
+    }
+    @media screen and (max-width: 880px) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+@mixin description($textAl) {
+    font-size: 18px;
+    line-height: 37px;
+    text-align: $textAl;
+    font-family: $mainFont;
+    font-weight: 400;
+    color: $primaryCol;
+    @media screen and (max-width: 1024px) {
+        font-size: 17px;
+    }
+    @media screen and (max-width: 880px) {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 13px;
+    }
+}
