@@ -33,7 +33,7 @@ html,
 body {
     font-family: $mainFont;
     color: $primaryCol;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
     &.lock {
     @media (max-width: 767px)  {
         overflow: hidden;
